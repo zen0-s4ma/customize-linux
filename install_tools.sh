@@ -41,7 +41,7 @@ zip tar gzip bzip2 xz-utils rsync dkms dpkg \
 gnupg2 apt-transport-https ca-certificates \
 dnsutils iputils-ping whois traceroute \
 python3 python3-pip gcc g++ clang lldb lld golang rustc cargo \
-flatpak tor torbrowser-launcher
+flatpak tor torbrowser-launcher gedit
 
 ============================================================================================
 
