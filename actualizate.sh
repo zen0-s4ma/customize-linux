@@ -9,6 +9,10 @@ echo "=== apt install -y linux-headers-amd64 linux-image-amd64 ==="
 sudo apt install -y linux-headers-amd64 linux-image-amd64
 
 echo
+echo "=== apt install -y kali-linux-default ==="
+sudo apt install -y kali-linux-default
+
+echo
 echo "=== apt upgrade -y ==="
 sudo apt upgrade -y
 
