@@ -5,12 +5,8 @@ echo "=== apt update -y ==="
 sudo apt update -y
 
 echo
-echo "=== apt install -y kali-linux-everything ==="
-sudo apt install -y kali-linux-everything
-
-echo
-echo "=== Instalando manualmente paquetes extra ==="
-sudo apt install -y neofetch fastfetch git wget curl
+echo "=== apt install -y linux-headers-amd64 linux-image-amd64 ==="
+sudo apt install -y linux-headers-amd64 linux-image-amd64
 
 echo
 echo "=== apt upgrade -y ==="
@@ -21,15 +17,10 @@ echo "=== apt full-upgrade -y ==="
 sudo apt full-upgrade -y
 
 echo
-echo "=== apt install -y linux-headers-amd64 linux-image-amd64 build-essential dkms ==="
-sudo apt install -y linux-headers-amd64 linux-image-amd64 build-essential dkms
-
-echo
 echo "=== Autoremove Clean Autoclean ==="
 sudo apt autoremove --purge -y
 sudo apt clean
 sudo apt autoclean
-
 
 echo
 echo "=== Verificando y reparando paquetes rotos (dpkg --configure -a) ==="
