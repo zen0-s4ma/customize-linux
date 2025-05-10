@@ -41,20 +41,23 @@ zip tar gzip bzip2 xz-utils rsync dkms dpkg \
 gnupg2 apt-transport-https ca-certificates \
 dnsutils iputils-ping whois traceroute \
 python3 python3-pip gcc g++ clang lldb lld golang rustc cargo \
-flatpak tor torbrowser-launcher gedit
+flatpak tor torbrowser-launcher gedit gnome-software gnome-software-plugin-flatpak
 
 ============================================================================================
 
 ### Configurar herramientas
 ## flatpak
 # cargar repositorio flathub
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Instalar Easy Flatpak
-flatpak install flathub org.dupot.easyflatpak
+flatpak install -y flathub org.dupot.easyflatpak
 
 # Ejecutar Easy Flatpak
 flatpak run org.dupot.easyflatpak
+
+# flatpak usando gnome store:
+gnome-software
 
 ============================================================================================
 
